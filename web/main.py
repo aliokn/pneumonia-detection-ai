@@ -1,5 +1,5 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
-from flask import Flask, render_template, request, Response,jsonify
+from flask import Flask, render_template, request, Response, jsonify
 import numpy as np
 import os
 from werkzeug.utils import secure_filename
@@ -11,8 +11,8 @@ from keras.models import load_model
 
 app = Flask(__name__)
 
-MODEL_ARCHITECTURE = './model/model.json'
-MODEL_WEIGHTS = './model/model.h5'
+MODEL_ARCHITECTURE = './models/model.json'
+MODEL_WEIGHTS = './models/model.h5'
 
 json_file = open(MODEL_ARCHITECTURE)
 loaded_model_json = json_file.read()
@@ -72,9 +72,7 @@ def upload():
     print(veri)
     jsonify(veri)
 
-    return render_template('sonuc.html',veriler=veri)
-
-
+    return render_template('sonuc.html', veriler=veri)
 
 @app.route("/zatürenedir")
 def spage():
@@ -83,7 +81,6 @@ def spage():
 @app.route("/sonuc")
 def tpage():
     return render_template("sonuc.html")
-
 
 if __name__ == "__main__":
     app.run(debug=True)
