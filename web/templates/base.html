@@ -32,81 +32,49 @@
             </ul>
           </div>
         </nav>
-
 <!-- ana başlık -->
-     <div align="center" class="my-5 " >
-
-<!--
-              <div>
-            <form id="upload-file" method="post" enctype="multipart/form-data">
-                <label for="imageUpload" class="upload-label">
-                    X ray
-                </label>
-                <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
-                 <div class="image-section" style="display:none;">
-                <div class="img-preview">
-                    <div id="imagePreview">
-                    </div>
-                </div>
-            </div>
-
-                <div>
-                    <button type="button" class="upload-label" id="btn-predict">Predict!</button>
-                </div>
-            </form>
-
--->
-
-<h1>ZATÜRE TESTİ</h1>
-
-
-</div>
+    <div align="center" class="my-5" >
+        <h1>ZATÜRE TESTİ</h1>
+    </div>
 <!-- her şeyi ortalama -->
-         <div align="center " class="mx-auto w-50" >
-<!-- yükleme dosya -->
-<!--
-       <form>
-            <div class="custom-file w-50 mb-3">
-       <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-       <label class="custom-file-label" for="validatedCustomFile">Yüklenecek Dosyayı Seç</label>
-        <div class="invalid-feedback">Example invalid custom file feedback</div>
-        </div>
-        </form>
--->
+    <div align="center " class="form-result-container mx-auto w-50" >
+<!-- dosya yükleme benim-->
+       <form id="upload-form" method="post" action="upload" enctype="multipart/form-data">
+    <div class="custom-file w-50 mb-3">
+       <input type="file" name="image" accept=".png, .jpg, .jpeg"  class="custom-file-input" id="image-upload" required>
+    <div id="analyze-button-container">
+       <label class="custom-file-label " for="upload-form">X-ray Dosyası Seç</label>
 
+       <button id="analyze-button" class="btn btn-secondary btn-lg my-5">Hastalık Bul</button>
+    </div>
+        <div class="invalid-feedback">Example invalid custom file feedback</div>
+    </div>
+        </form>
+
+<!-- dosya yükleme alinin
              <div class="form-result-container">
   <form id="upload-form" method="post" action="upload" enctype="multipart/form-data">
-        <label for="imageUpload" class="upload-label">
-            Select an x-ray image file:
+        <label for="image-Upload" class="upload-label">
+            <li class="list-group-item">X-ray dosyanı seç</li>
         </label>
-
+        <br>
         <input type="file" name="image" id="image-upload" accept=".png, .jpg, .jpeg">
         <div id="analyze-button-container">
-            <button id="analyze-button">Analyze</button>
+            <button id="analyze-button" class="btn btn-secondary btn-lg mb-3">Hastalık Bul</button>
         </div>
     </form>
-
-
 </div>
-<!-- hastalık bul butonu -->
+-->
+<!-- sonra hastalık bul basınca çalışacak -->
 
-          <button  type="button" class="btn btn-secondary btn-lg mb-3">Hastalık Bul</button>
-
-
-<!-- sonra hastalık bul basınca çalışacak-->
-           <div class="text-center">
-          <div class="spinner-border mb-3 tex-center" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-        </div>
 <!-- sonra if le bağla renklendir  -->
-            <div class="mx-auto w-25" >
+    <div class="mx-auto w-25 mt-5" >
             <ul class="list-group">
-          <li class="list-group-item">Zatüre Viral </li>
-          <li class="list-group-item">Zatüre Bakteri</li>
-          <li class="list-group-item">Hastalık Yok</li>
+          <li class="list-group-item"> Virüs </li>
+          <li class="list-group-item"> Bakteri</li>
+          <li class="list-group-item"> Normal</li>
             </ul>
-         </div>
+    </div>
 
 
 
@@ -117,9 +85,8 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-          </div>
+    </div>
 
 
-</div>
 </body>
 </html>
