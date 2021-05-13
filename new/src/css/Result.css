@@ -1,0 +1,11 @@
+.text{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.res-img{
+    height: 40em;
+    width: 40em;
+    float:right;
+    margin-right: 10px;
+    
+    }

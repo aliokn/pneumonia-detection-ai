@@ -1,0 +1,41 @@
+.home-img{
+height: 30em;
+width: 30em;
+float:right;
+margin-right: 10px;
+
+}
+.content-h{
+    font-size: xx-large;
+
+}
+.content-p{
+    font-size: x-large;
+
+}
+.howworks{
+    
+    
+    
+       margin: 10px;
+       padding: 15px 45px;
+       text-align: center;
+       text-transform: uppercase;
+       transition: 0.5s;
+       background-size: 200% auto;
+       color: white  !important;        
+       box-shadow: 0 0 20px #eee;
+       border-radius: 10px;
+       display: block;
+       
+       background-image: linear-gradient(to right, #DC2424 0%, #4A569D  51%, #DC2424  100%)
+    
+
+    
+}
+.howorks:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
